@@ -11,6 +11,9 @@ mkdir --parents \
   ${BUILD_DIR} \
   ${CACHE_DIR} \
   ${ENV_DIR}
+  
+# Hack to get my schema to validate
+mkdir --parents ${BUILD_DIR}/vector-data
 
 # First, set up vector
 if !(test -f ${BUILD_DIR}/bin/vector); then
