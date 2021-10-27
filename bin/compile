@@ -32,8 +32,7 @@ if !(test -f ${BUILD_DIR}/bin/vector); then
     --file ${BUILD_DIR}/vector.tar.gz \
     --strip-components=2 \
     --directory ${BUILD_DIR} \
-    ./vector-nightly-x86_64-unknown-linux-musl/bin/vector
-   # ./vector-x86_64-unknown-linux-musl/bin/vector
+    ./vector-x86_64-unknown-linux-musl/bin/vector
 
   # Clean up
   echo "Clean up"
