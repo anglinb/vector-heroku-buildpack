@@ -23,7 +23,8 @@ if !(test -f ${BUILD_DIR}/bin/vector); then
   curl \
     --location \
     --output ${BUILD_DIR}/vector.tar.gz \
-    https://packages.timber.io/vector/latest/vector-x86_64-unknown-linux-musl.tar.gz
+    https://packages.timber.io/vector/nightly/2021-10-27/vector-nightly-x86_64-unknown-linux-musl.tar.gz
+  #  https://packages.timber.io/vector/latest/vector-x86_64-unknown-linux-musl.tar.gz
   # Goes to /bin/vector for the user
   tar \
     --extract \
@@ -31,7 +32,8 @@ if !(test -f ${BUILD_DIR}/bin/vector); then
     --file ${BUILD_DIR}/vector.tar.gz \
     --strip-components=2 \
     --directory ${BUILD_DIR} \
-    ./vector-x86_64-unknown-linux-musl/bin/vector
+    ./vector-nightly-x86_64-unknown-linux-musl/bin/vector
+   # ./vector-x86_64-unknown-linux-musl/bin/vector
 
   # Clean up
   echo "Clean up"
